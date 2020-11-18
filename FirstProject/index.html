@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- reset css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- for index css -->
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- link swiper css -->
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <title>Hello?</title>
+</head>
+<body>
+  <!-- page header -->
+<header class="clearfix">
+     <div class="logo">
+        <a href=""><img src="./images/logo.png" alt=""></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Adoption</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contacts</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+    <div class="burger-menu">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+      <div class="line-3"></div>
+    </div>
+</header> 
+<!-- swiper content -->
+ <div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="swiper">
+        <img class="infant" src="./images/infant2.jpg" alt="">
+        <div class="infant-info">
+          <h2>Infant Adoption</h2>
+          <p>help children that are in needs </p>
+          <button class="adopt-now">How to Adopt</button>
+          <button class="more-info">More Info</button>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="swiper">
+        <img class="infant" src="./images/international.jpg" alt="">
+        <div class="infant-info">
+          <h2>International Adoption</h2>
+          <p>help children that are in needs </p>
+          <button class="adopt-now">How to Adopt</button>
+          <button class="more-info">More Info</button>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="swiper">
+        <img class="infant" src="./images/teen.jpg" alt="">
+        <div class="infant-info">
+          <h2>Teenager Adoption</h2>
+          <p>help children that are in needs </p>
+          <button class="adopt-now">How to Adopt</button>
+          <button class="more-info">More Info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Arrows -->
+  <div class="swiper-button-next swiper-button-black"></div>
+  <div class="swiper-button-prev swiper-button-black"></div>
+</div>
+<!-- swiper js -->
+<script src="./script/swiper.min.js"></script>
+ <!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  });
+</script>
+<!-- swiper autoplay -->
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+  // autoplay:true,
+  autoplay: {
+    delay: 3500,
+    stopOnLastSlide: false,
+    disableOnInteraction: true,
+  },
+});
+</script>
+</body>
+
+<script src="./script/nav.js"></script>
+</html>
